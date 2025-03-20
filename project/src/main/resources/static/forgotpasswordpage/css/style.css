@@ -1,0 +1,237 @@
+.scene-forgot {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+input {
+  /*Ẩn boder trên, phải và trái*/
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+ /*Thiết lập kiểu cho border dưới*/
+        border-bottom-style: groove;
+        background-color: CornflowerBlue;
+        color:white;
+        padding: 15px;
+   }
+input::placeholder{
+   color:white;
+}
+input:focus {
+   outline: none;
+}
+
+.scene-forgot .div {
+  background-color: #ececec;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.scene-forgot .overlap-group {
+  position: absolute;
+  width: 554px;
+  height: 370px;
+  top: 166px;
+  left: 645px;
+  background-color: #ffffff;
+}
+
+.scene-forgot .forgot-your-password {
+  position: absolute;
+    top: 21px;
+    left: 34px;
+    font-family: "Righteous", Helvetica;
+    font-weight: 400;
+    color: #091581;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.scene-forgot .overlap {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 131px;
+  left: 65px;
+  background-color: #d9d9d9;
+}
+
+.scene-forgot .text-wrapper {
+  position: absolute;
+  top: 8px;
+  left: 36px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-forgot .envelope-solid {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 9px;
+  left: 5px;
+}
+
+.scene-forgot .div-wrapper {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 211px;
+  left: 65px;
+  background-color: #94bfff;
+}
+
+.scene-forgot .text-wrapper-2 {
+  position: absolute;
+  top: 6px;
+  left: 111px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-forgot .text-wrapper-3 {
+  position: absolute;
+  top: 253px;
+  left: 208px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-forgot .rectangle {
+  position: absolute;
+  width: 360px;
+  height: 3px;
+  top: 168px;
+  left: 65px;
+  background-color: #999393;
+}
+
+.scene-forgot .overlap-2 {
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+  left: 0;
+  background-color: #94bfff;
+}
+
+.scene-forgot .overlap-3 {
+  position: absolute;
+    width: 120px;
+    height: 32px;
+    top: 19px;
+    left: 1077px;
+    background-color: #d9d9d9;
+    border-radius: 16px;
+}
+
+.scene-forgot .rectangle-2 {
+  position: absolute;
+  width: 120px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 16px;
+}
+
+.scene-forgot .text-wrapper-4 {
+  position: absolute;
+  top: 4px;
+  left: 52px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-forgot .ic-round-home {
+  position: absolute;
+  width: 34px;
+  height: 28px;
+  top: 2px;
+  left: 9px;
+}
+
+.scene-forgot .text-wrapper-5 {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  font-family: "Italiana", Helvetica;
+  font-weight: 400;
+  color: #081480;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.scene-forgot .overlap-4 {
+  position: absolute;
+  width: 100vw;
+  height: 5vh;
+  bottom: 0px;
+  left: 0;
+  background-color: #94bfff;
+}
+
+.scene-forgot .p {
+  position: absolute;
+  top: 9px;
+  left: 309px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-forgot .forgotpass {
+  position: absolute;
+  width: 326px;
+  height: calc(100vh - 15vh);
+  top: 10vh;
+  left: 4px;
+  object-fit: cover;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Righteous:400|Inter:400|Italiana:400");

@@ -1,0 +1,466 @@
+.scene-register {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+input {
+  /*Ẩn boder trên, phải và trái*/
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+ /*Thiết lập kiểu cho border dưới*/
+        border-bottom-style: groove;
+        background-color: CornflowerBlue;
+        color:white;
+        padding: 15px;
+   }
+input::placeholder{
+   color:white;
+}
+input:focus {
+   outline: none;
+}
+
+.scene-register .div {
+  background-color: #ececec;
+  width: 100vw;
+  height: 541px;
+  position: relative;
+}
+
+.scene-register .overlap {
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+  left: 0;
+  background-color: #94bfff;
+}
+
+.scene-register .text-wrapper {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  font-family: "Italiana", Helvetica;
+  font-weight: 400;
+  color: #081480;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.scene-register .overlap-group {
+  position: absolute;
+  width: 120px;
+  height: 32px;
+  top: 19px;
+  left: 1000px;
+  background-color: #d9d9d9;
+  border-radius: 16px;
+}
+
+.scene-register .text-wrapper-2 {
+  position: absolute;
+  top: 4px;
+  left: 52px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .ic-round-home {
+  position: absolute;
+  width: 34px;
+  height: 28px;
+  top: 2px;
+  left: 9px;
+}
+
+.scene-register .overlap-2 {
+  position: absolute;
+  width: 100vw;
+  height: 471px;
+  top: 70px;
+  left: 0;
+}
+
+.scene-register .overlap-3 {
+  width: 100vw;
+  height: calc(100vh - 10vh);
+}
+
+.scene-register .rectangle {
+  width: 293px;
+  height: 85vh;
+  /* object-fit: cover; */
+}
+
+.scene-register .rectangle-2 {
+  width: 100vw;
+  height: 5vh;
+  background-color: #94bfff;
+}
+
+.scene-register .p {
+  
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.scene-register .overlap-group-2 {
+  position: absolute;
+  width: 620px;
+  height: 474px;
+  top: 67px;
+  left: 513px;
+  background-color: #ffffff;
+}
+
+.scene-register .text-wrapper-3 {
+  position: absolute;
+  top: 11px;
+  left: 233px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #091581;
+  font-size: 42px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .text-wrapper-4 {
+  position: absolute;
+    top: 50px;
+    left: 236px;
+    font-family: "Righteous", Helvetica;
+    font-weight: 400;
+    color: #857b7b;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.scene-register .div-wrapper {
+  position: absolute;
+  width: 245px;
+  height: 37px;
+  top: 90px;
+  left: 24px;
+  background-color: #d9d9d9;
+}
+
+.scene-register .text-wrapper-5 {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .overlap-4 {
+  position: absolute;
+  width: 245px;
+  height: 38px;
+  top: 90px;
+  left: 352px;
+}
+
+.scene-register .rectangle-3 {
+  position: absolute;
+  width: 245px;
+  height: 37px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+}
+
+.scene-register .text-wrapper-6 {
+  position: absolute;
+  top: 7px;
+  left: 21px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .rectangle-4 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 35px;
+  left: 0;
+  background-color: #999393;
+}
+
+.scene-register .overlap-5 {
+  position: absolute;
+  width: 245px;
+  height: 37px;
+  top: 147px;
+  left: 24px;
+  background-color: #d9d9d9;
+}
+
+.scene-register .overlap-6 {
+  position: absolute;
+  width: 245px;
+  height: 39px;
+  top: 205px;
+  left: 352px;
+}
+
+.scene-register .text-wrapper-7 {
+  position: absolute;
+  top: 5px;
+  left: 21px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .rectangle-5 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 36px;
+  left: 0;
+  background-color: #999393;
+}
+
+.scene-register .overlap-7 {
+  position: absolute;
+  width: 245px;
+  height: 37px;
+  top: 204px;
+  left: 24px;
+  background-color: #d9d9d9;
+}
+
+.scene-register .text-wrapper-8 {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .overlap-8 {
+  position: absolute;
+  width: 245px;
+  height: 37px;
+  top: 261px;
+  left: 24px;
+  background-color: #d9d9d9;
+}
+
+.scene-register .text-wrapper-9 {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .overlap-9 {
+  position: absolute;
+  width: 245px;
+  height: 39px;
+  top: 147px;
+  left: 352px;
+}
+
+.scene-register .text-wrapper-10 {
+  position: absolute;
+  top: 4px;
+  left: 21px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .overlap-10 {
+  position: absolute;
+  width: 573px;
+  height: 37px;
+  top: 318px;
+  left: 24px;
+  background-color: #94bfff;
+}
+
+.scene-register .text-wrapper-11 {
+  position: absolute;
+  top: 5px;
+  left: 222px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .overlap-11 {
+  position: absolute;
+  width: 573px;
+  height: 31px;
+  top: 412px;
+  left: 24px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.scene-register .text-wrapper-12 {
+   display: flex; /* Sử dụng display flex */
+   justify-content: center; /* Căn ngang giữa */
+   align-items: center; /* Căn dọc giữa */
+  top: 3px;
+  left: 216px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .envelope-solid {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 1px;
+  left: 11px;
+}
+
+.scene-register .rectangle-6 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 184px;
+  left: 24px;
+  background-color: #999393;
+}
+
+.scene-register .rectangle-7 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 241px;
+  left: 24px;
+  background-color: #999393;
+}
+
+.scene-register .rectangle-8 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 298px;
+  left: 24px;
+  background-color: #999393;
+}
+
+.scene-register .rectangle-9 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 385px;
+  left: 24px;
+  background-color: #999393;
+}
+
+.scene-register .rectangle-10 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 385px;
+  left: 352px;
+  background-color: #999393;
+}
+
+.scene-register .rectangle-11 {
+  position: absolute;
+  width: 245px;
+  height: 3px;
+  top: 127px;
+  left: 24px;
+  background-color: #999393;
+}
+
+.scene-register .text-wrapper-13 {
+  position: absolute;
+  top: 358px;
+  left: 24px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-register .text-wrapper-14 {
+  position: absolute;
+  top: 375px;
+  left: 303px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Italiana:400|Inter:400|Righteous:400");

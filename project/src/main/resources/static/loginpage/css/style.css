@@ -1,0 +1,315 @@
+.scene-login {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 85%;
+}
+
+input {
+  /*Ẩn boder trên, phải và trái*/
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+ /*Thiết lập kiểu cho border dưới*/
+        border-bottom-style: groove;
+        background-color: CornflowerBlue;
+        color:white;
+        padding: 15px;
+   }
+input::placeholder{
+   color:white;
+}
+input:focus {
+   outline: none;
+}
+
+.scene-login .div {
+  background-color: #ececec;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.scene-login .overlap {
+  position: absolute;
+  width: 100vw;
+  height: 9vh;
+  top: 0;
+  left: 0;
+  background-color: #94bfff;
+}
+
+.scene-login .text-wrapper {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  font-family: "Italiana", Helvetica;
+  font-weight: 400;
+  color: #081480;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.scene-login .overlap-group {
+  position: absolute;
+  width: 120px;
+  height: 32px;
+  top: 19px;
+  left: 1124px;
+  background-color: #d9d9d9;
+  border-radius: 16px;
+}
+
+.scene-login .text-wrapper-2 {
+  position: absolute;
+  top: 4px;
+  left: 52px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .ic-round-home {
+  position: absolute;
+  width: 34px;
+  height: 28px;
+  top: 2px;
+  left: 9px;
+}
+
+.scene-login .overlap-2 {
+  position: absolute;
+  width: 353px;
+  height: 436px;
+  top: 70px;
+  left: 0;
+}
+
+.scene-login .rectangle {
+  position: absolute;
+  width: 191px;
+  height: 86vh;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.scene-login .true-food-kitchen {
+  position: absolute;
+  width: 347px;
+  height: 265px;
+  top: 152px;
+  left: 6px;
+  object-fit: cover;
+}
+
+.scene-login .div-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 5vh;
+  bottom: 0px;
+  left: 0;
+  background-color: #94bfff;
+}
+
+.scene-login .p {
+  text-align: center;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.scene-login .overlap-group-2 {
+  position: absolute;
+  width: 413px;
+  height: 422px;
+  top: 167px;
+  left: 536px;
+  background-color: #ffffff;
+}
+
+.scene-login .text-wrapper-3 {
+  position: absolute;
+  top: 8px;
+  left: 165px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #091581;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .text-wrapper-4 {
+  position: absolute;
+  top: 53px;
+  left: 108px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #857b7b;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .overlap-3 {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 97px;
+  left: 26px;
+  background-color: #d9d9d9;
+}
+
+.scene-login .text-wrapper-5 {
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .user-solid {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  top: 8px;
+  left: 12px;
+}
+
+.scene-login .overlap-4 {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 153px;
+  left: 26px;
+  background-color: #d9d9d9;
+}
+
+.scene-login .key-solid {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 7px;
+  left: 12px;
+}
+
+.scene-login .overlap-5 {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 205px;
+  left: 26px;
+  background-color: #94bfff;
+}
+
+.scene-login .text-wrapper-6 {
+  position: absolute;
+  top: 5px;
+  left: 157px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .overlap-6 {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 302px;
+  left: 26px;
+  background-color: #94bfff;
+}
+
+.scene-login .text-wrapper-7 {
+  position: absolute;
+  top: 6px;
+  left: 112px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .envelope-solid {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 7px;
+  left: 12px;
+}
+
+.scene-login .text-wrapper-8 {
+  position: absolute;
+  top: 247px;
+  left: 91px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.scene-login .overlap-7 {
+  position: absolute;
+  width: 360px;
+  height: 37px;
+  top: 354px;
+  left: 26px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.scene-login .text-wrapper-9 {
+  position: absolute;
+  top: 4px;
+  left: 88px;
+  font-family: "Righteous", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Italiana:400|Inter:400|Righteous:400");

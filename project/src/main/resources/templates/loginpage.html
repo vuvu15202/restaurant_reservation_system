@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <link rel="stylesheet" th:href="@{/loginpage/css/style.css}"/>
+</head>
+
+<body>
+<div class="scene-login">
+    <div class="div">
+        <div class="overlap">
+            <div class="text-wrapper">Hola Cuisine Restaurant</div>
+            <a th:href="@{/home}">
+                <div class="overlap-group">
+                    <div class="text-wrapper-2">Home</div>
+                    <img class="ic-round-home" th:src="@{/loginpage/img/ic-round-home.svg}"/>
+                </div>
+            </a>
+        </div>
+        <div class="overlap-2">
+            <div class="rectangle"></div>
+            <img class="true-food-kitchen" th:src="@{/loginpage/img/true-food-kitchen-35-1.png}"/>
+        </div>
+        <div class="div-wrapper">
+            <p class="p">@Copyright 2023 Hola Cuisine Restaurant</p>
+        </div>
+        <div class="overlap-group-2">
+            <div class="text-wrapper-3">login</div>
+            <p class="text-wrapper-4">Sign in to your account</p>
+            <div class="overlap-3">
+                <input type='text' id="username" name='username' value=''
+                       style="background-color:#d9d9d9; width:360px; height:37px; font-size:18px;"
+                       placeholder="Username">
+                <div id="errorMessageUsername" style="color: red;"></div>
+            </div>
+            <div class="overlap-4">
+                <input type='password' id="password" name='password'
+                       style="background-color:#d9d9d9; width:360px; height:37px; font-size:18px;"
+                       placeholder="Password"/>
+                <div id="errorMessagePassword" style="color: red;"></div>
+                <div id="errorMessageAccount" style="color: red;"></div>
+            </div>
+            <div class="overlap-5">
+                <div class="text-wrapper-6"></div>
+                <button onclick="login()" id="submit"
+                        style="width:360px;height:37px;background-color: #94bfff;font-family: Righteous, Helvetica; font-weight: 400;color: #ffffff;font-size: 18px;">
+                    Login
+                </button>
+            </div>
+
+            <p class="text-wrapper-8"><a th:href="@{forgotpassword}">I forgot my password. Click here to reset</a></p>
+            <div class="overlap-7">
+                <div class="text-wrapper-9"><a th:href="@{/register}">Register new account</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      if (username != '' && password != '') {
+      document.getElementById('errorMessageAccount').textContent = ''
+      document.getElementById('errorMessagePassword').textContent = ''
+      document.getElementById('errorMessageUsername').textContent = ''
+      const data = {
+        userName: username,
+        password: password
+      }
+      var requestOptions = {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      };
+
+      fetch('http://localhost:8088/hcr/authenticate', requestOptions)
+        .then(function (response) {
+          if (response.ok) {
+            return response.json(); // Parse the response as JSON
+          } else {
+            document.getElementById('errorMessageAccount').textContent = 'Not found User'
+            throw new Error('Request failed with status: ' + response.status);
+          }
+        })
+        .then(function (data) {
+          //set cookies
+          var token = data.jwttoken; // Access the token property
+          console.log(token); // Display the token in the console or use it as needed
+          var date = new Date();
+          date.setTime(date.getTime() + (12 * 60 * 60 * 1000)); // Set expiration time in milliseconds
+          var expires = "expires=" + date.toUTCString();
+          // document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+          document.cookie = "token=" + encodeURIComponent(token) + ";" + expires + "; path=/hcr/";
+
+          // Check if a redirect URL is provided in the response
+          if (data.redirectUrl) {
+            window.location.href = data.redirectUrl;
+          } else {
+            // Default redirect if no specific role-based URL is provided
+            window.location.href = '/home'; // You can change this to your desired default URL
+          }
+        })
+        .catch(function (error) {
+          // Handle any errors
+        });
+
+      } else {
+        document.getElementById('errorMessageAccount').textContent = ''
+        if (username === '' && password != '') {
+          document.getElementById('errorMessagePassword').textContent = ''
+          document.getElementById('errorMessageUsername').textContent = 'Please enter user name'
+        }
+        if (password === '' && username != '') {
+          document.getElementById('errorMessageUsername').textContent = ''
+          document.getElementById('errorMessagePassword').textContent = 'Please enter password'
+        }
+        if (username === '' && password === '') {
+          document.getElementById('errorMessageUsername').textContent = 'Please enter user name'
+          document.getElementById('errorMessagePassword').textContent = 'Please enter password'
+        }
+
+      }
+
+    }
+    function logout() {
+      document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/hcr/;';
+      window.location.href = '/hcr/login';
+    }
+</script>
+</body>
+
+</html>
